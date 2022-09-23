@@ -1,0 +1,1220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{ 
+    --background: #131415;
+    --fondo: #252525;
+    --amarillo: #FFA400;
+    --rojo: #FC2933;
+    --blanco: #FFFFFF;
+    /*degrade*/
+    --primero: #FFA100;
+    --segundo: #FB103D;    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+ }
+
+ header{    
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-end;
+   align-items: center;
+   padding: 10px 25px;
+   top: 0;  
+   width: 100%;   
+ }
+
+ .navbar
+ {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+ }
+
+ .logo
+ { 
+   position:relative;
+   width: 76px;
+   height: 79px;
+   left: -900px;
+   top: 10px;
+ }
+
+.iconHome
+{       
+    position: static;
+    left: 17.42%;
+    right: 10.42%;
+    top: 8.33%;
+    bottom: 8.33%; 
+}
+
+ .navbarLink
+ {
+    color: #FFFFFF;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;    
+ }
+
+ .carrito
+ {
+    position: relative;
+    left: 8.33%;
+    right: 8.27%;
+    top: 10.42%;
+    bottom: 27.13%;
+}  
+  
+ .circulo
+ {  position:relative;
+    width: 13px;
+    height: 13px;
+    left: -14px;
+    top: -9px;
+ }
+
+ .cuenta
+ {
+   position: relative;
+   width: 30px;
+   height: 30px;
+   left: -13px;
+   top: -1px;  
+
+ }
+
+ body{
+    background: var(--background);
+ }
+
+ /*main*/
+
+ main
+ {  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+ }
+
+ #hero
+ {   
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 70px 100px;
+  width: 90%;   
+ }
+
+.heroInfo
+{
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFFFFF; 
+  gap:20px;
+   
+}
+
+.heroInfo h1 {
+    font-size: 55px;    
+    min-width: 500px;
+    font-weight: 700;   
+    
+  }
+
+  .heroInfo h2 {
+    font-size: 45px;    
+    min-width: 500px;
+    font-weight: 700;    
+  }
+
+  .heroInfo p
+  {
+    padding: 15px 0;
+  }
+
+  .btnHero
+  {    
+    gap: 60px;
+    border: 3px;
+    border-radius: 15px;
+    padding: 15px 45px;
+    font-size: 14px;
+    background: linear-gradient(to right, var(--primero), var(--segundo));    
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    color: var(--blanco);
+    box-shadow: rgba(65, 91, 70, 0.874) 0px 8px 24px;    
+  }
+
+  .btn
+  {
+    gap: 60px;
+    border: 3px;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 14px;
+    background: linear-gradient(to right, var(--primero), var(--segundo));    
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    color: var(--blanco);
+  }
+ 
+  .heroInfo img
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pizza-1
+  {
+    position: absolute;
+    width: 265px;
+    height: 265px;
+    left: 780px;
+    top: 170px;
+  }
+  
+  .pizza-2
+  {
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    left: 915px;
+    top: 65px;
+  }
+  
+  #cards
+  {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0px 105px;
+    gap: 15px;
+    
+    
+  }
+  #cards h3
+  {
+    color:var(--blanco);
+    font-size: 22px;    
+    font-weight: 500; 
+    
+  }
+  .cardsContainer
+  {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;   
+  }
+
+  .card
+  {
+    height: 100px;
+    display: flex;
+    gap: 25px;
+    background-color:var(--fondo);
+    border-radius: 15px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  }
+
+  .cardInfo
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card h2 {
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .descripcion
+  {
+    color: var(--blanco);
+    font-weight: 400;
+    font-size: 11px;
+    opacity: 0.3;    
+  }
+
+  .precio
+  {
+    font-weight: 800;
+    font-size: 18px;
+    background: linear-gradient(to right, var(--primero), var(--segundo));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  #categorias
+  {
+    display: flex;
+    align-content:space-around;
+    justify-content: center; 
+      
+  }
+
+  #categorias h4
+  {
+    
+    color: var(--blanco);
+    font-weight: 800;
+    font-size: 15px;
+    position: absolute;
+    width: 87px;
+    height: 20px;
+    left: 120px;
+    top: 750px;
+  }
+
+  .categoriasMenu
+  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+  }
+
+  .pizzas
+  {
+    background:var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px; 
+    display: flex; 
+    padding: 15px 30px;
+    position: absolute;
+    width: 147px;
+    height: 171px;
+    left: 100px;
+    top: 821px;
+
+  }
+
+  .pizzaImg
+  {   
+    
+    position: absolute;
+    width: 71px;
+    height: 71px;
+    left: 37px;
+    top: 30px;
+  }
+
+  .pizzaImgBlur
+  {   
+    
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    left: 37px;
+    top: 30px;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .barra
+  {
+    display: flex;  
+    position:absolute;    
+    left: 10px;
+    top: 100px; 
+  }
+
+  .pizzas p
+  {
+    color:var(--blanco);
+    font-weight: 400;
+    font-size: 15px;   
+    position:absolute;
+    width: 47px;
+    height: 20px;
+    left: 50px;
+    top: 120px; 
+  }
+
+  .hamburguesa
+  {
+    background:var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px; 
+    display: flex; 
+    padding: 15px 30px;
+    position: absolute;
+    width: 147px;
+    height: 171px;
+    left: 280px;
+    top: 821px;
+  }
+
+  .burguer
+  {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 28px;
+    top: 25px;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .burguerBlur
+  {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 30px;
+    top: 25px;
+  }
+
+  .barra2
+  {
+    display: flex;  
+    position:absolute;    
+    left: 10px;
+    top: 100px; 
+  }
+
+  .hamburguesa p
+  {
+    color:var(--blanco);
+    font-weight: 400;
+    font-size: 15px;   
+    position:absolute;
+    width: 47px;
+    height: 20px;
+    left: 15px;
+    top: 120px; 
+  }
+
+  .napa
+  {
+    background:var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px; 
+    display: flex; 
+    padding: 15px 30px;
+    position: absolute;
+    width: 147px;
+    height: 171px;
+    left: 460px;
+    top: 821px;
+  }
+
+  .napaImg
+  {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 30px;
+    top: 25px;
+  }
+
+  .napaImgBlur
+  {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 29px;
+    top: 25px;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .barra3
+  {
+    display: flex;  
+    position:absolute;    
+    left: 10px;
+    top: 100px; 
+  }
+
+  .napa p
+  {
+    color:var(--blanco);
+    font-weight: 400;
+    font-size: 15px;   
+    position:absolute;
+    width: 47px;
+    height: 20px;
+    left: 35px;
+    top: 120px; 
+  }
+
+  .individuales
+  {
+    background:var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px; 
+    display: flex; 
+    padding: 15px 30px;
+    position: absolute;
+    width: 147px;
+    height: 171px;
+    left: 640px;
+    top: 821px;
+  }
+
+  .indiImg
+  {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 30px;
+    top: 25px;    
+  }
+
+  .indiImgBlur
+  {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 30px;
+    top: 25px;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .barra4
+  {
+    display: flex;  
+    position:absolute;    
+    left: 10px;
+    top: 100px; 
+  }
+
+  .individuales p
+  {
+    color:var(--blanco);
+    font-weight: 400;
+    font-size: 15px;   
+    position:absolute;
+    width: 47px;
+    height: 20px;
+    left: 27px;
+    top: 120px; 
+  }
+
+  .wraps
+  {
+    background:var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px; 
+    display: flex; 
+    padding: 15px 30px;
+    position: absolute;   
+    width: 147px;
+    height: 171px;
+    left: 820px;
+    top: 821px;
+  }
+
+  .wrapsImg
+  {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 30px;
+    top: 25px;
+  }
+
+  .wrapsImgBlur
+  {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 30px;
+    top: 25px;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .barra5
+  {
+    display: flex;  
+    position:absolute;    
+    left: 10px;
+    top: 100px; 
+  }
+
+  .wraps p
+  {
+    color:var(--blanco);
+    font-weight: 400;
+    font-size: 15px;   
+    position:absolute;
+    width: 47px;
+    height: 20px;
+    left: 48px;
+    top: 120px; 
+  }
+
+  .mexican
+  {
+    background:var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px; 
+    display: flex; 
+    padding: 15px 30px;
+    position: absolute;   
+    width: 147px;
+    height: 171px;
+    left: 1000px;
+    top: 821px;
+
+  }
+
+  .mexicanImg
+  {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 30px;
+    top: 25px;
+
+  }
+
+  .mexicanImgBlur
+  {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 30px;
+    top: 25px;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .barra6
+  {
+    display: flex;  
+    position:absolute;    
+    left: 10px;
+    top: 100px; 
+  }
+
+  .mexican p
+  {
+    color:var(--blanco);
+    font-weight: 400;
+    font-size: 15px;  
+    text-align: center; 
+    position:absolute;
+    width: 105px;
+    height: 20px;
+    left: 22px;
+    top: 120px; 
+  }
+
+  .batidukis
+  {
+    background:var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px; 
+    display: flex; 
+    padding: 15px 30px;
+    position: absolute;
+    width: 147px;
+    height: 171px;
+    left: 1180px;
+    top: 821px;
+
+  }
+
+  .batiImg
+  {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    left: 30px;
+    top: 25px;    
+  }
+
+  .batiImgBlur
+  {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 30px;
+    top: 25px;
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  .barra7
+  {
+    display: flex;  
+    position:absolute;    
+    left: 10px;
+    top: 100px; 
+  }
+
+  .batidukis p
+  {
+    color:var(--blanco);
+    font-weight: 400;
+    font-size: 15px;  
+    text-align: center; 
+    position:absolute;
+    width: 105px;
+    height: 20px;
+    left: 22px;
+    top: 120px; 
+  }
+
+  #populares
+  {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 100px;
+    gap: 10px;
+    margin-top: 360px;
+  }
+
+  #populares h3
+  {
+    color:var(--blanco);
+    font-size: 22px;    
+    font-weight: 500; 
+
+  }
+
+  .containerPopulares
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cardPopularMenu1,.cardPopularMenu2,.cardPopularMenu3,
+  .cardPopularMenu4,.cardPopularMenu5,.cardPopularMenu6,
+  .cardPopularMenu7,.cardPopularMenu8
+  {
+    background: var(--fondo);
+    box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+    border-radius: 15px;  
+  }
+
+  .cardPopularMenu1
+  {    
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 100px;
+    top: 1120px;
+      
+  }
+
+  .cardPopularMenu2
+  {
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 400px;
+    top: 1120px;
+  }
+
+  .cardPopularMenu3
+  {
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 700px;
+    top: 1120px;
+
+  }
+  .cardPopularMenu4
+  {
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 1000px;
+    top: 1120px;
+
+  }
+  .cardPopularMenu5
+  {
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 100px;
+    top: 1373px;
+  }
+  .cardPopularMenu6
+  {
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 400px;
+    top: 1373px;
+
+  }
+
+  .cardPopularMenu7
+  {
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 700px;
+    top: 1373px;
+
+  }
+  .cardPopularMenu8
+  {
+    position: absolute;
+    width: 282px;
+    height: 213px;
+    left: 1000px;
+    top: 1373px;
+  }
+
+  .cardPopularMenu1 img,.cardPopularMenu2 img,.cardPopularMenu3 img,
+  .cardPopularMenu4 img,.cardPopularMenu5 img,.cardPopularMenu6 img,
+  .cardPopularMenu7 img,.cardPopularMenu8 img
+  {
+    display: flex;
+    position: relative;
+    left: 23px;
+    right: 74.07%;
+    top: 15px;
+    bottom: 34.73%;
+  }
+
+  
+
+  .popularInfoMenu1,.popularInfoMenu2,.popularInfoMenu3,
+  .popularInfoMenu4,.popularInfoMenu5,.popularInfoMenu6,
+  .popularInfoMenu7,.popularInfoMenu8
+  {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #FFFFFF;  
+   }
+
+   .popularInfoMenu1 h2,.popularInfoMenu2 h2,.popularInfoMenu3 h2,
+   .popularInfoMenu4 h2,.popularInfoMenu5 h2,.popularInfoMenu6 h2,
+   .popularInfoMenu7 h2,.popularInfoMenu8 h2
+   {
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 15px;  
+   }
+
+  .popularInfoMenu1 h2 {
+     
+    position: absolute;
+    height: 20px;
+    left: 125px;
+    right: 100px;
+    top: 1245px    
+  }
+  
+  .popularInfoMenu2 h2 {
+    position: absolute;
+    height: 20px;
+    left: 425px;
+    right: 100px;
+    top: 1245px;
+    
+  }
+
+  .popularInfoMenu3 h2 {
+    position: absolute;
+    height: 20px;
+    left: 725px;
+    right: 100px;
+    top: 1245px;
+    
+  }
+
+  .popularInfoMenu4 h2 {
+    position: absolute;
+    height: 20px;
+    left: 1025px;
+    right: 100px;
+    top: 1245px;
+    
+  }
+
+  .popularInfoMenu5 h2 {
+    position: absolute;
+    height: 20px;
+    left: 125px;
+    right: 100px;
+    top: 1499px;    
+  }
+
+  .popularInfoMenu6 h2 {
+    position: absolute;
+    height: 20px;
+    left: 425px;
+    right: 100px;
+    top: 1499px;   
+    
+  }
+
+  .popularInfoMenu7 h2 {
+    position: absolute;
+    height: 20px;
+    left: 725px;
+    right: 100px;
+    top: 1499px;   
+    
+  }
+
+  .popularInfoMenu8 h2 {
+    position: absolute;
+    height: 20px;
+    left: 1025px;
+    right: 100px;
+    top: 1499px;   
+  }
+
+  .popuDescripcionMenu1,.popuDescripcionMenu2,.popuDescripcionMenu3,
+  .popuDescripcionMenu4,.popuDescripcionMenu5,.popuDescripcionMenu6,
+  .popuDescripcionMenu7,.popuDescripcionMenu8
+  {
+    color: var(--blanco);
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.3;  
+  }
+
+  .popuDescripcionMenu1
+  {  
+    position: absolute;
+    height: 20px;
+    left: 125px;
+    right: 100px;
+    top: 1270px  
+  }
+
+  .popuDescripcionMenu2
+  {  
+    position: absolute;
+    height: 20px;
+    left: 425px;
+    right: 100px;
+    top: 1270px  
+  }
+
+  .popuDescripcionMenu3
+  {  
+    position: absolute;
+    height: 20px;
+    left: 725px;
+    right: 100px;
+    top: 1270px  
+  }
+
+  .popuDescripcionMenu4
+  {  
+    position: absolute;
+    height: 20px;
+    left: 1025px;
+    right: 100px;
+    top: 1270px  
+  }
+
+  .popuDescripcionMenu5
+  {  
+    position: absolute;
+    height: 20px;
+    left: 125px;
+    right: 100px;
+    top: 1525px;  
+  }
+
+  .popuDescripcionMenu6
+  {  
+    position: absolute;
+    height: 20px;
+    left: 425px;
+    right: 100px;
+    top: 1525px; 
+  }
+  .popuDescripcionMenu7
+  {  
+    position: absolute;
+    height: 20px;
+    left: 725px;
+    right: 100px;
+    top: 1525px; 
+  }
+  .popuDescripcionMenu8
+  {  
+    position: absolute;
+    height: 20px;
+    left: 1025px;
+    right: 100px;
+    top: 1525px; 
+  }
+
+
+  .popuPrecioMenu1,.popuPrecioMenu2,.popuPrecioMenu3,
+  .popuPrecioMenu4,.popuPrecioMenu5,.popuPrecioMenu6,
+  .popuPrecioMenu7,.popuPrecioMenu8
+  {
+    font-weight: 800;
+    font-size: 19px;
+    background: linear-gradient(var(--primero), var(--segundo));
+    background-clip: text;
+    -webkit-background-clip: text;   
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  .popuPrecioMenu1
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 125px;
+    right: 100px;
+    top: 1300px  
+  }
+
+  .popuPrecioMenu2
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 425px;
+    right: 100px;
+    top: 1300px  
+  }
+
+  .popuPrecioMenu3
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 725px;
+    right: 100px;
+    top: 1300px  
+  }
+
+  .popuPrecioMenu4
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 1025px;
+    right: 100px;
+    top: 1300px  
+  }
+
+  .popuPrecioMenu5
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 125px;
+    right: 100px;
+    top: 1555px;  
+  }
+  .popuPrecioMenu6
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 425px;
+    right: 100px;
+    top: 1555px;  
+  }
+
+  .popuPrecioMenu7
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 725px;
+    right: 100px;
+    top: 1555px;   
+  }
+
+  .popuPrecioMenu8
+  {
+    
+    position: absolute;
+    height: 20px;
+    left: 1025px;
+    right: 100px;
+    top: 1555px;  
+  }
+
+  .popuBtnMenu1,.popuBtnMenu2,.popuBtnMenu3,
+  .popuBtnMenu4,.popuBtnMenu5,.popuBtnMenu6,
+  .popuBtnMenu7,.popuBtnMenu8
+  {
+    gap: 60px;
+    border: 3px;
+    border-radius: 20px;    
+    font-size: 14px;
+    background: linear-gradient(to right, var(--primero), var(--segundo));    
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    color: var(--blanco);
+  }
+  
+  .popuBtnMenu1
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 275px;
+    top: 1286px;
+  }
+
+  .popuBtnMenu2
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 575px;
+    top: 1286px;
+  }
+
+  .popuBtnMenu3
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 875px;
+    top: 1286px;
+  }
+
+  .popuBtnMenu4
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 1175px;
+    top: 1286px;
+  }
+
+  .popuBtnMenu5
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 275px;
+    top: 1545px;
+  }
+
+  .popuBtnMenu6
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 575px;
+    top: 1545px;
+  }
+
+  .popuBtnMenu7
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 875px;
+    top: 1545px;
+  }
+
+  .popuBtnMenu8
+  {
+    
+    position: absolute;
+    width: 85px;
+    height: 29px;
+    left: 1175px;
+    top: 1545px;
+  }
+
+  footer
+  {
+    display: flex;
+    padding: 60px 30px;
+    color: var(--blanco);
+    position: absolute;    
+    left: 420px;
+    top: 1723px;
+  }
+
+  .links
+  {   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .links a
+  {
+    color: #FFFFFF;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  footer h4
+  {
+    display: flex;
+    text-align: center;    
+    position: absolute;
+    width: 267px;
+    height: 67px;
+    left: 100px;
+    top: 150px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  footer span
+  {
+    display: flex;
+    text-align: center;    
+    position: absolute;
+    width: 267px;
+    height: 67px;
+    left: 155px;
+    top: 1px;
+    font-weight: 900;
+    
+  }
+
+
+
+  
